@@ -1,0 +1,12 @@
+PODS:
+  - Brightcove-Player-Core/dynamic (6.3.3)
+
+DEPENDENCIES:
+  - Brightcove-Player-Core/dynamic
+
+SPEC CHECKSUMS:
+  Brightcove-Player-Core: 0ad95a19bbc9ac12188b60863844e1722790a731
+
+PODFILE CHECKSUM: 95b86479eed34004f0102f9a7a529ad266414cbf
+
+COCOAPODS: 1.4.0

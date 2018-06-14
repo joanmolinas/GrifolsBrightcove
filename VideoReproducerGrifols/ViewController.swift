@@ -10,16 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+	
+	@IBAction func watchWasPressed(_ sender: UIButton) {
+		let account = Account(account: "1971571407001", policyKey: "BCpkADawqM3NLoL6I0rwEUxKX7Z8Bywq0wYl45W114Ffm2BEyYs5IHB8bV8jZtjAlxg_xQYdHY_HHSYd9rdRNpcgel15LGfCzhNuQfAcNMDH5-3ZCsC0RLViXKHQ_lVPf8_YAQ1KaLoGIjEo")
+		let video = Video(id: "5072413926001")
+		
+		
+		let controller = BrightcoveReproducerController(account: account, video: video)
+		navigationController?.present(controller, animated: true)
 	}
-
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
-	}
-
-
 }
-
