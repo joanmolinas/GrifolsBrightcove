@@ -9,9 +9,10 @@ Pod::Spec.new do |s|
 	s.author        = { "Joan Molinas Ramon" => "joan.molinas@external.grifols.com" }
 	s.platform      = :ios
 
-	s.source        = { :git => "https://github.com/ulidev/GrifolsBrightcove.git", :branch => "master", :tag => "#{s.version}"}
+	s.source        = { :git => "https://github.com/ulidev/GrifolsBrightcove.git", :tag => "#{s.version}"}
 	s.source_files  = "Source", "Source/**/*.swift"
 
+#	s.dependency 	'Brightcove-Player-Core/dynamic'
 	s.dependency 	'Alamofire', '~> 4.7'
 
 end
