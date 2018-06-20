@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Account {
+public struct Account {
 	let account: String
 	let policyKey: String
 }

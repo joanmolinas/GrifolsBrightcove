@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BrightcoveReproducerController: UINavigationController {
+public class BrightcoveReproducerController: UINavigationController {
 
 	// MARK: - Life cycle
 	init(account: Account, video: Video) {
@@ -23,7 +23,7 @@ class BrightcoveReproducerController: UINavigationController {
 		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 	}
 	
-	required init?(coder aDecoder: NSCoder) {
+	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 	}
 }

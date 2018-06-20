@@ -9,14 +9,14 @@
 import UIKit
 import BrightcovePlayerSDK
 
-class BrightcoveReproducerViewController: UIViewController, BCOVPlaybackControllerDelegate {
+public class BrightcoveReproducerViewController: UIViewController, BCOVPlaybackControllerDelegate {
 
 	// MARK: - Public properties
 	public private(set) var account: Account!
 	public private(set) var video: Video!
 	
 	// MARK: - Private properties
-	private let fairPlayAuthProxy = BCOVFPSBrightcoveAuthProxy(publisherId: nil, applicationId: nil)
+	private let fairPlayAuthProxy = BCOVFPSBrightcoveAuthProxy.sharedInstance
 	private let sdkManager = BCOVPlayerSDKManager.shared()
 	private var playbackController: BCOVPlaybackController!
 	private lazy var playbackService: BCOVPlaybackService = {
@@ -31,7 +31,7 @@ class BrightcoveReproducerViewController: UIViewController, BCOVPlaybackControll
 		self.video = video
 	}
 	
-	required init?(coder aDecoder: NSCoder) {
+	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 	}
 	
@@ -39,16 +39,16 @@ class BrightcoveReproducerViewController: UIViewController, BCOVPlaybackControll
 		print("Deinit " + String(describing: self))
 	}
 	
-	override func viewDidLoad() {
+	override public func viewDidLoad() {
 		super.viewDidLoad()
-		setupPlaybackController()
-		setupPlayerView()
+//		setupPlaybackController()
+//		setupPlayerView()
 		requestContentFromPlaybackService()
 		
 		navigationItem.leftBarButtonItem = UIBarButtonItem(title: "close", style: .done, target: self, action: #selector(dismiss(_:)))
 	}
 	
-	override func viewDidDisappear(_ animated: Bool) {
+	override public func viewDidDisappear(_ animated: Bool) {
 		super.viewDidDisappear(animated)
 		playbackController.pause()
 	}
@@ -57,20 +57,20 @@ class BrightcoveReproducerViewController: UIViewController, BCOVPlaybackControll
 		playbackService.findVideo(withVideoID: video.id, parameters: nil) { (video: BCOVVideo?, jsonResponse: [AnyHashable: Any]?, error: Error?) -> Void in
 			
 			if let v = video {
-				
-				let arr = NSArray(array: [v])
-				self.playbackController!.setVideos(arr)
+				print(video)
+//				let arr = NSArray(array: [v])
+//				self.playbackController!.setVideos(arr)
 			} else {
 				print("ViewController Debug - Error retrieving video: \(error?.localizedDescription ?? "unknown error")")
 			}
 		}
 	}
 	
-	func playbackController(_ controller: BCOVPlaybackController!, didAdvanceTo session: BCOVPlaybackSession!) {
+	public func playbackController(_ controller: BCOVPlaybackController!, didAdvanceTo session: BCOVPlaybackSession!) {
 		print("Advanced to new session")
 	}
 	
-	func playbackController(_ controller: BCOVPlaybackController!, playbackSession session: BCOVPlaybackSession!, didProgressTo progress: TimeInterval) {
+	public func playbackController(_ controller: BCOVPlaybackController!, playbackSession session: BCOVPlaybackSession!, didProgressTo progress: TimeInterval) {
 		print("Progress: \(progress) seconds")
 	}
 }

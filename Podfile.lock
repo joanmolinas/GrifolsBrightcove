@@ -1,12 +1,15 @@
 PODS:
+  - Alamofire (4.7.2)
   - Brightcove-Player-Core/dynamic (6.3.3)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.7)
   - Brightcove-Player-Core/dynamic
 
 SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   Brightcove-Player-Core: 0ad95a19bbc9ac12188b60863844e1722790a731
 
-PODFILE CHECKSUM: 95b86479eed34004f0102f9a7a529ad266414cbf
+PODFILE CHECKSUM: deb10484f06f589f679fb88f2670b8f2f992682c
 
 COCOAPODS: 1.4.0

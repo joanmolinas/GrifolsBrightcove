@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Video {
+public struct Video {
 	let id: String
 }

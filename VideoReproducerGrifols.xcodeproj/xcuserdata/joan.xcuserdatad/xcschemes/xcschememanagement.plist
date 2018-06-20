@@ -7,7 +7,20 @@
 		<key>VideoReproducerGrifols.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>4EA86AC020D283BF007C5179</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4EA86AD420D283C0007C5179</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
