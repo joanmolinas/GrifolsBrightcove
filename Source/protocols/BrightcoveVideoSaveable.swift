@@ -9,5 +9,5 @@
 import Foundation
 
 protocol BrightcoveVideoSaveable {
-	func save(video: Video)
+	func save(video: Video, path: String)
 }

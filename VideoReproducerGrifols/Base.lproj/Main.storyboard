@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2lm-h1-tuc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2lm-h1-tuc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,11 +29,24 @@
                                     <action selector="watchWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Ve-lz-0KJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sx1-Fl-Qge">
+                                <rect key="frame" x="132" y="391" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="HFp-Kg-nAV"/>
+                                    <constraint firstAttribute="height" constant="30" id="UTz-j9-vPv"/>
+                                </constraints>
+                                <state key="normal" title="Download video"/>
+                                <connections>
+                                    <action selector="downloadWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MkX-jx-6jb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Sx1-Fl-Qge" firstAttribute="top" secondItem="5Nt-3j-wNe" secondAttribute="bottom" constant="43" id="MeC-SL-eeN"/>
                             <constraint firstItem="5Nt-3j-wNe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P9T-8f-ZlW"/>
                             <constraint firstItem="5Nt-3j-wNe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Pxm-kx-xCI"/>
+                            <constraint firstItem="Sx1-Fl-Qge" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ss8-wP-yUj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

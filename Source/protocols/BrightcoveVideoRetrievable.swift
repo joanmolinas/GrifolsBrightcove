@@ -9,5 +9,5 @@
 import Foundation
 
 protocol BrightcoveVideoRetrievable {
-	
+	func retrieve(video: Video) -> URL?
 }

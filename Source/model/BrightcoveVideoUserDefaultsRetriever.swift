@@ -11,6 +11,6 @@ import Foundation
 public struct BrightcoveVideoUserDefaultsRetriever: BrightcoveVideoRetrievable {
 	func retrieve(video: Video) -> URL? {
 		guard let sUrl = UserDefaults.standard.string(forKey: video.id) else { return nil }
-		return URL(string: sUrl)
+		return URL(fileURLWithPath: sUrl)
 	}
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 struct BrightcoveVideoUserDefaultsSaver: BrightcoveVideoSaveable {
-	func save(video: Video) {
-		
+	func save(video: Video, path: String) {
+		UserDefaults.standard.set(path, forKey: video.id)
 	}
 }

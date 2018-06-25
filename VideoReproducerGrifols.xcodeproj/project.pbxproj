@@ -9,18 +9,20 @@
 /* Begin PBXBuildFile section */
 		4E3545A620DA8D3B00022644 /* BrightcoveViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3545A420DA8D3B00022644 /* BrightcoveViewerController.swift */; };
 		4E3545A720DA8D3B00022644 /* BrightcoveViewerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E3545A520DA8D3B00022644 /* BrightcoveViewerController.xib */; };
+		4E6C3CB420E14A06005DA1A8 /* BrightcoveVideoSaveable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6C3CB320E14A06005DA1A8 /* BrightcoveVideoSaveable.swift */; };
+		4E6C3CB620E14A55005DA1A8 /* BrightcoveVideoRetrievable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6C3CB520E14A55005DA1A8 /* BrightcoveVideoRetrievable.swift */; };
+		4E6C3CBB20E14B1A005DA1A8 /* BrigthcoveVideoDownloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6C3CBA20E14B1A005DA1A8 /* BrigthcoveVideoDownloadable.swift */; };
+		4E6C3CBD20E14CAB005DA1A8 /* BrightcoveVideoUserDefaultsRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6C3CBC20E14CAB005DA1A8 /* BrightcoveVideoUserDefaultsRetriever.swift */; };
+		4E6C3CBF20E16255005DA1A8 /* BrightcoveVideoUserDefaultsSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6C3CBE20E16255005DA1A8 /* BrightcoveVideoUserDefaultsSaver.swift */; };
 		4EA86AC520D283BF007C5179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA86AC420D283BF007C5179 /* AppDelegate.swift */; };
 		4EA86ACA20D283BF007C5179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA86AC820D283BF007C5179 /* Main.storyboard */; };
 		4EA86ACC20D283BF007C5179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EA86ACB20D283BF007C5179 /* Assets.xcassets */; };
 		4EA86ACF20D283BF007C5179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA86ACD20D283BF007C5179 /* LaunchScreen.storyboard */; };
 		4EA86ADA20D283C0007C5179 /* VideoReproducerGrifolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA86AD920D283C0007C5179 /* VideoReproducerGrifolsTests.swift */; };
 		4EA86AE520D283ED007C5179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA86AE420D283ED007C5179 /* ViewController.swift */; };
-		4EA86AE820D286FD007C5179 /* BrightcoveReproducerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA86AE720D286FD007C5179 /* BrightcoveReproducerViewController.swift */; };
 		4EA86AEA20D28770007C5179 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA86AE920D28770007C5179 /* Video.swift */; };
 		4EA86AEC20D2912F007C5179 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA86AEB20D2912F007C5179 /* Account.swift */; };
-		4EBC82D620D458F0004E83EF /* BCOVFPSBrightcoveAuthProxy+SharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBC82D520D458F0004E83EF /* BCOVFPSBrightcoveAuthProxy+SharedInstance.swift */; };
-		4EC6F3F820DA3EFE0050976E /* BrigthcoveVideoDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6F3F720DA3EFE0050976E /* BrigthcoveVideoDownloader.swift */; };
-		4EEE689C20D2D74600655E6B /* BrightcoveReproducerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE689B20D2D74600655E6B /* BrightcoveReproducerController.swift */; };
+		4EC6F3F820DA3EFE0050976E /* BrightcoveVideoDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6F3F720DA3EFE0050976E /* BrightcoveVideoDownloader.swift */; };
 		C1D1C2CAA736A1D69B9C07A4 /* Pods_VideoReproducerGrifols.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8564223931317D0F7F3B43 /* Pods_VideoReproducerGrifols.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,11 @@
 		4908C9660D80CB21A2188723 /* Pods-VideoReproducerGrifols.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoReproducerGrifols.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoReproducerGrifols/Pods-VideoReproducerGrifols.release.xcconfig"; sourceTree = "<group>"; };
 		4E3545A420DA8D3B00022644 /* BrightcoveViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightcoveViewerController.swift; sourceTree = "<group>"; };
 		4E3545A520DA8D3B00022644 /* BrightcoveViewerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrightcoveViewerController.xib; sourceTree = "<group>"; };
+		4E6C3CB320E14A06005DA1A8 /* BrightcoveVideoSaveable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightcoveVideoSaveable.swift; sourceTree = "<group>"; };
+		4E6C3CB520E14A55005DA1A8 /* BrightcoveVideoRetrievable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightcoveVideoRetrievable.swift; sourceTree = "<group>"; };
+		4E6C3CBA20E14B1A005DA1A8 /* BrigthcoveVideoDownloadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrigthcoveVideoDownloadable.swift; sourceTree = "<group>"; };
+		4E6C3CBC20E14CAB005DA1A8 /* BrightcoveVideoUserDefaultsRetriever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightcoveVideoUserDefaultsRetriever.swift; sourceTree = "<group>"; };
+		4E6C3CBE20E16255005DA1A8 /* BrightcoveVideoUserDefaultsSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightcoveVideoUserDefaultsSaver.swift; sourceTree = "<group>"; };
 		4EA86AC120D283BF007C5179 /* VideoReproducerGrifols.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoReproducerGrifols.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA86AC420D283BF007C5179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EA86AC920D283BF007C5179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,12 +56,9 @@
 		4EA86AD920D283C0007C5179 /* VideoReproducerGrifolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoReproducerGrifolsTests.swift; sourceTree = "<group>"; };
 		4EA86ADB20D283C0007C5179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EA86AE420D283ED007C5179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4EA86AE720D286FD007C5179 /* BrightcoveReproducerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightcoveReproducerViewController.swift; sourceTree = "<group>"; };
 		4EA86AE920D28770007C5179 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		4EA86AEB20D2912F007C5179 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		4EBC82D520D458F0004E83EF /* BCOVFPSBrightcoveAuthProxy+SharedInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BCOVFPSBrightcoveAuthProxy+SharedInstance.swift"; sourceTree = "<group>"; };
-		4EC6F3F720DA3EFE0050976E /* BrigthcoveVideoDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrigthcoveVideoDownloader.swift; sourceTree = "<group>"; };
-		4EEE689B20D2D74600655E6B /* BrightcoveReproducerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightcoveReproducerController.swift; sourceTree = "<group>"; };
+		4EC6F3F720DA3EFE0050976E /* BrightcoveVideoDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightcoveVideoDownloader.swift; sourceTree = "<group>"; };
 		8F8564223931317D0F7F3B43 /* Pods_VideoReproducerGrifols.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoReproducerGrifols.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,6 +88,37 @@
 				4908C9660D80CB21A2188723 /* Pods-VideoReproducerGrifols.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4E6C3CB720E14AC4005DA1A8 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4E6C3CB320E14A06005DA1A8 /* BrightcoveVideoSaveable.swift */,
+				4E6C3CB520E14A55005DA1A8 /* BrightcoveVideoRetrievable.swift */,
+				4E6C3CBA20E14B1A005DA1A8 /* BrigthcoveVideoDownloadable.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		4E6C3CB820E14AD3005DA1A8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4E3545A420DA8D3B00022644 /* BrightcoveViewerController.swift */,
+				4E3545A520DA8D3B00022644 /* BrightcoveViewerController.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4E6C3CB920E14B03005DA1A8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				4EA86AE920D28770007C5179 /* Video.swift */,
+				4EA86AEB20D2912F007C5179 /* Account.swift */,
+				4E6C3CBC20E14CAB005DA1A8 /* BrightcoveVideoUserDefaultsRetriever.swift */,
+				4E6C3CBE20E16255005DA1A8 /* BrightcoveVideoUserDefaultsSaver.swift */,
+				4EC6F3F720DA3EFE0050976E /* BrightcoveVideoDownloader.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		4EA86AB820D283BF007C5179 = {
@@ -132,14 +167,9 @@
 		4EA86AE620D286C7007C5179 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				4EA86AE920D28770007C5179 /* Video.swift */,
-				4EA86AEB20D2912F007C5179 /* Account.swift */,
-				4EEE689B20D2D74600655E6B /* BrightcoveReproducerController.swift */,
-				4EA86AE720D286FD007C5179 /* BrightcoveReproducerViewController.swift */,
-				4EC6F3F720DA3EFE0050976E /* BrigthcoveVideoDownloader.swift */,
-				4EBC82D520D458F0004E83EF /* BCOVFPSBrightcoveAuthProxy+SharedInstance.swift */,
-				4E3545A420DA8D3B00022644 /* BrightcoveViewerController.swift */,
-				4E3545A520DA8D3B00022644 /* BrightcoveViewerController.xib */,
+				4E6C3CB720E14AC4005DA1A8 /* protocols */,
+				4E6C3CB920E14B03005DA1A8 /* model */,
+				4E6C3CB820E14AD3005DA1A8 /* UI */,
 			);
 			name = Source;
 			path = ../Source;
@@ -320,13 +350,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EA86AEC20D2912F007C5179 /* Account.swift in Sources */,
-				4EA86AE820D286FD007C5179 /* BrightcoveReproducerViewController.swift in Sources */,
+				4E6C3CBD20E14CAB005DA1A8 /* BrightcoveVideoUserDefaultsRetriever.swift in Sources */,
+				4E6C3CBB20E14B1A005DA1A8 /* BrigthcoveVideoDownloadable.swift in Sources */,
+				4E6C3CB420E14A06005DA1A8 /* BrightcoveVideoSaveable.swift in Sources */,
 				4EA86AEA20D28770007C5179 /* Video.swift in Sources */,
-				4EC6F3F820DA3EFE0050976E /* BrigthcoveVideoDownloader.swift in Sources */,
-				4EEE689C20D2D74600655E6B /* BrightcoveReproducerController.swift in Sources */,
+				4EC6F3F820DA3EFE0050976E /* BrightcoveVideoDownloader.swift in Sources */,
+				4E6C3CB620E14A55005DA1A8 /* BrightcoveVideoRetrievable.swift in Sources */,
+				4E6C3CBF20E16255005DA1A8 /* BrightcoveVideoUserDefaultsSaver.swift in Sources */,
 				4EA86AE520D283ED007C5179 /* ViewController.swift in Sources */,
 				4EA86AC520D283BF007C5179 /* AppDelegate.swift in Sources */,
-				4EBC82D620D458F0004E83EF /* BCOVFPSBrightcoveAuthProxy+SharedInstance.swift in Sources */,
 				4E3545A620DA8D3B00022644 /* BrightcoveViewerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

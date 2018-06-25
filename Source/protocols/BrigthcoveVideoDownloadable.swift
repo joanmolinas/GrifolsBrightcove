@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+protocol BrightcoveVideoDownloadable {
+	
+	init(account: Account, video: Video, saver: BrightcoveVideoSaveable)
+	
+	func download(completion: @escaping (Error?) -> Void)
+}

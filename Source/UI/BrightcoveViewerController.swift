@@ -16,6 +16,8 @@ class BrightcoveViewerController: UIViewController {
 	@IBOutlet private weak var viewerView: UIView!
 	
 	// MARK: - Properties
+	private var video: Video!
+	private var retriever: BrightcoveVideoRetrievable!
 	var headerImage: UIImage? = nil {
 		didSet {
 			headerImageView.image = headerImage
@@ -28,8 +30,10 @@ class BrightcoveViewerController: UIViewController {
 	}
 	
 	// MARK: - Life cycle
-	init() {
+	init(video: Video, retriever: BrightcoveVideoRetrievable = BrightcoveVideoUserDefaultsRetriever()) {
 		super.init(nibName: nil, bundle: nil)
+		self.video = video
+		self.retriever = retriever
 	}
 	
 	required init?(coder aDecoder: NSCoder) {
@@ -38,8 +42,11 @@ class BrightcoveViewerController: UIViewController {
 	
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-		let videoURL = URL(string: "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4")
-		let player = AVPlayer(url: videoURL!)
+		
+		let url = retriever.retrieve(video: video)
+		precondition(url != nil, "Trying to reproduce a not downloaded video")
+		
+		let player = AVPlayer(url: url!)
 		let playerViewController = AVPlayerViewController()
 		playerViewController.showsPlaybackControls = true
 		playerViewController.player = player

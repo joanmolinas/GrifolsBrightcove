@@ -15,14 +15,16 @@ class BrightcoveVideoDownloader: BrightcoveVideoDownloadable {
 	// MARK: - Properties
 	let video: Video
 	let account: Account
+	let saver: BrightcoveVideoSaveable
 	private lazy var playbackService: BCOVPlaybackService = {
 		return BCOVPlaybackService(accountId: account.account, policyKey: account.policyKey)
 	}()
 	
 	// MARK: - Life cycle
-	required init(account: Account, video: Video) {
+	required init(account: Account, video: Video, saver: BrightcoveVideoSaveable) {
 		self.account = account
 		self.video = video
+		self.saver = saver
 	}
 	
 	// MARK: - API
@@ -45,8 +47,7 @@ class BrightcoveVideoDownloader: BrightcoveVideoDownloadable {
 						   progressHandler:((Progress) -> Void)? = nil) {
 		let source = video.sources.first! as! BCOVSource
 		let url = source.url!
-//		let url = URL(string: "http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4")!
-		
+
 		let destination = DownloadRequest.suggestedDownloadDestination(for: .documentDirectory)
 		
 		Alamofire.download(
@@ -60,13 +61,15 @@ class BrightcoveVideoDownloader: BrightcoveVideoDownloadable {
 				print(progress)
 				progressHandler?(progress)
 			})
-			.response(completionHandler: { (downloadResponse) in
+			.response(completionHandler: {  (downloadResponse) in
 				guard let response = downloadResponse.response, response.statusCode == 200 else {
-					let error = NSError(domain: "com.atlabs.videoReproducer.grifols", code: 500)
+					let error = NSError(domain: "com.atlabs.videoReproducerGrifols", code: 500)
 					completion(error)
 					return
 				}
 				
+				let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] + "/" + (response.suggestedFilename ?? "")
+				self.saver.save(video: self.video, path: documentsPath)
 			})
 	}
 }
