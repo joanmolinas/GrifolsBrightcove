@@ -8,8 +8,18 @@
 
 import Foundation
 
-struct BrightcoveVideoUserDefaultsSaver: BrightcoveVideoSaveable {
-	func save(video: Video, path: String) {
-		UserDefaults.standard.set(path, forKey: video.id)
+public struct BrightcoveVideoUserDefaultsSaver: BrightcoveVideoSaveable {
+	
+	// MARK: - Properties
+	private(set) var userDefaults: UserDefaults!
+	
+	// MARK: - Life cycle
+	init(userDefaults: UserDefaults = .standard) {
+		self.userDefaults = userDefaults
+	}
+	
+	// MARK: - API
+	mutating public func save(video: Video, path: String) {
+		userDefaults.set(path, forKey: video.id)
 	}
 }

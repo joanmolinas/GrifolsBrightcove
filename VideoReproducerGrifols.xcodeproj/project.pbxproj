@@ -14,11 +14,11 @@
 		4E6C3CBB20E14B1A005DA1A8 /* BrigthcoveVideoDownloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6C3CBA20E14B1A005DA1A8 /* BrigthcoveVideoDownloadable.swift */; };
 		4E6C3CBD20E14CAB005DA1A8 /* BrightcoveVideoUserDefaultsRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6C3CBC20E14CAB005DA1A8 /* BrightcoveVideoUserDefaultsRetriever.swift */; };
 		4E6C3CBF20E16255005DA1A8 /* BrightcoveVideoUserDefaultsSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6C3CBE20E16255005DA1A8 /* BrightcoveVideoUserDefaultsSaver.swift */; };
+		4E8CEA8F20E29A7D00CAA8A2 /* BrightcoveSaverUserDefaultsRetrieverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8CEA8E20E29A7D00CAA8A2 /* BrightcoveSaverUserDefaultsRetrieverTests.swift */; };
 		4EA86AC520D283BF007C5179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA86AC420D283BF007C5179 /* AppDelegate.swift */; };
 		4EA86ACA20D283BF007C5179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA86AC820D283BF007C5179 /* Main.storyboard */; };
 		4EA86ACC20D283BF007C5179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EA86ACB20D283BF007C5179 /* Assets.xcassets */; };
 		4EA86ACF20D283BF007C5179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA86ACD20D283BF007C5179 /* LaunchScreen.storyboard */; };
-		4EA86ADA20D283C0007C5179 /* VideoReproducerGrifolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA86AD920D283C0007C5179 /* VideoReproducerGrifolsTests.swift */; };
 		4EA86AE520D283ED007C5179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA86AE420D283ED007C5179 /* ViewController.swift */; };
 		4EA86AEA20D28770007C5179 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA86AE920D28770007C5179 /* Video.swift */; };
 		4EA86AEC20D2912F007C5179 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA86AEB20D2912F007C5179 /* Account.swift */; };
@@ -46,6 +46,7 @@
 		4E6C3CBA20E14B1A005DA1A8 /* BrigthcoveVideoDownloadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrigthcoveVideoDownloadable.swift; sourceTree = "<group>"; };
 		4E6C3CBC20E14CAB005DA1A8 /* BrightcoveVideoUserDefaultsRetriever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightcoveVideoUserDefaultsRetriever.swift; sourceTree = "<group>"; };
 		4E6C3CBE20E16255005DA1A8 /* BrightcoveVideoUserDefaultsSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightcoveVideoUserDefaultsSaver.swift; sourceTree = "<group>"; };
+		4E8CEA8E20E29A7D00CAA8A2 /* BrightcoveSaverUserDefaultsRetrieverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightcoveSaverUserDefaultsRetrieverTests.swift; sourceTree = "<group>"; };
 		4EA86AC120D283BF007C5179 /* VideoReproducerGrifols.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoReproducerGrifols.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA86AC420D283BF007C5179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EA86AC920D283BF007C5179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		4EA86ACE20D283BF007C5179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EA86AD020D283BF007C5179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EA86AD520D283C0007C5179 /* VideoReproducerGrifolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoReproducerGrifolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EA86AD920D283C0007C5179 /* VideoReproducerGrifolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoReproducerGrifolsTests.swift; sourceTree = "<group>"; };
 		4EA86ADB20D283C0007C5179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EA86AE420D283ED007C5179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4EA86AE920D28770007C5179 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
@@ -158,8 +158,8 @@
 		4EA86AD820D283C0007C5179 /* VideoReproducerGrifolsTests */ = {
 			isa = PBXGroup;
 			children = (
-				4EA86AD920D283C0007C5179 /* VideoReproducerGrifolsTests.swift */,
 				4EA86ADB20D283C0007C5179 /* Info.plist */,
+				4E8CEA8E20E29A7D00CAA8A2 /* BrightcoveSaverUserDefaultsRetrieverTests.swift */,
 			);
 			path = VideoReproducerGrifolsTests;
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 				4EA86ABE20D283BF007C5179 /* Frameworks */,
 				4EA86ABF20D283BF007C5179 /* Resources */,
 				928629A7A545543394DB5A41 /* [CP] Embed Pods Frameworks */,
-				FE25E2D89C5C26C1F04F59BC /* [CP] Copy Pods Resources */,
+				FC9619366F633B4C50DDF482 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,6 +240,7 @@
 					};
 					4EA86AD420D283C0007C5179 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 4EA86AC020D283BF007C5179;
 					};
@@ -312,19 +313,17 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-VideoReproducerGrifols/Pods-VideoReproducerGrifols-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${PODS_ROOT}/Brightcove-Player-Core/ios/dynamic/BrightcovePlayerSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrightcovePlayerSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoReproducerGrifols/Pods-VideoReproducerGrifols-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FE25E2D89C5C26C1F04F59BC /* [CP] Copy Pods Resources */ = {
+		FC9619366F633B4C50DDF482 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -367,7 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EA86ADA20D283C0007C5179 /* VideoReproducerGrifolsTests.swift in Sources */,
+				4E8CEA8F20E29A7D00CAA8A2 /* BrightcoveSaverUserDefaultsRetrieverTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,12 +544,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BLQXYC7927;
 				INFOPLIST_FILE = VideoReproducerGrifolsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.atlabs.videoReproducerGrifols.VideoReproducerGrifolsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoReproducerGrifols.app/VideoReproducerGrifols";
@@ -562,6 +563,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BLQXYC7927;
 				INFOPLIST_FILE = VideoReproducerGrifolsTests/Info.plist;

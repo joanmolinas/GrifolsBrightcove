@@ -6,6 +6,6 @@ use_frameworks!
 platform :ios, '11.0'
 
 target 'VideoReproducerGrifols' do
-  pod 'Brightcove-Player-Core/dynamic'
+  pod 'Brightcove-Player-Core'
   pod 'Alamofire', '~> 4.7'
 end

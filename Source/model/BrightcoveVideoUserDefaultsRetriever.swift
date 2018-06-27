@@ -9,8 +9,18 @@
 import Foundation
 
 public struct BrightcoveVideoUserDefaultsRetriever: BrightcoveVideoRetrievable {
-	func retrieve(video: Video) -> URL? {
-		guard let sUrl = UserDefaults.standard.string(forKey: video.id) else { return nil }
+	
+	// MARK: - Properties
+	private(set) var userDefaults: UserDefaults!
+	
+	// MARK: - Life cycle
+	init(userDefaults: UserDefaults = .standard) {
+		self.userDefaults = userDefaults
+	}
+	
+	// MARK: - API
+	public func retrieve(video: Video) -> URL? {
+		guard let sUrl = userDefaults.string(forKey: video.id) else { return nil }
 		return URL(fileURLWithPath: sUrl)
 	}
 }

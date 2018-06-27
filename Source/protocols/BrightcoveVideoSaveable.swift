@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol BrightcoveVideoSaveable {
-	func save(video: Video, path: String)
+public protocol BrightcoveVideoSaveable {
+	mutating func save(video: Video, path: String)
 }

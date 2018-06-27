@@ -8,9 +8,7 @@
 
 import Foundation
 
-protocol BrightcoveVideoDownloadable {
-	
+public protocol BrightcoveVideoDownloadable {
 	init(account: Account, video: Video, saver: BrightcoveVideoSaveable)
-	
 	func download(completion: @escaping (Error?) -> Void)
 }

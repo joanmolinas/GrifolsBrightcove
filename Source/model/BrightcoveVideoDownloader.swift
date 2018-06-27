@@ -10,25 +10,25 @@ import Foundation
 import BrightcovePlayerSDK
 import Alamofire
 
-class BrightcoveVideoDownloader: BrightcoveVideoDownloadable {
+public class BrightcoveVideoDownloader: BrightcoveVideoDownloadable {
 	
 	// MARK: - Properties
 	let video: Video
 	let account: Account
-	let saver: BrightcoveVideoSaveable
+	private(set) var saver: BrightcoveVideoSaveable
 	private lazy var playbackService: BCOVPlaybackService = {
 		return BCOVPlaybackService(accountId: account.account, policyKey: account.policyKey)
 	}()
 	
 	// MARK: - Life cycle
-	required init(account: Account, video: Video, saver: BrightcoveVideoSaveable) {
+	required public init(account: Account, video: Video, saver: BrightcoveVideoSaveable) {
 		self.account = account
 		self.video = video
 		self.saver = saver
 	}
 	
 	// MARK: - API
-	func download(completion: @escaping (Error?) -> Void) {
+	public func download(completion: @escaping (Error?) -> Void) {
 		playbackService.findVideo(
 			withVideoID: video.id,
 			parameters: nil)
